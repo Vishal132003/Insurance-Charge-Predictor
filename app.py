@@ -18,9 +18,20 @@ smoker = st.selectbox('Smoker', ('Yes', 'No'))
 # Convert smoker input to the format used in training (True/False)
 smoker_yes = True if smoker == 'Yes' else False
 
-# Create a DataFrame from the input
-input_data = pd.DataFrame({
-    'age': [age],
-    'bmi': [bmi],
-    'smoker_yes': [smoker_yes]
-})
+# Add a button to trigger prediction
+if st.button('Predict'):
+    # Create a DataFrame from the input
+    input_data = pd.DataFrame({
+        'age': [age],
+        'bmi': [bmi],
+        'smoker_yes': [smoker_yes]
+    })
+
+    # Predict charges
+    predicted_charges = model.predict(input_data)
+
+    st.subheader('Predicted Insurance Charges:')
+    st.write(f'${predicted_charges[0]:,.2f}')
+
+st.write('To run this app:')
+st.code('streamlit run app.py')
