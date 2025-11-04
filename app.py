@@ -31,7 +31,6 @@ if st.button('Predict'):
     predicted_charges = model.predict(input_data)
 
     st.subheader('Predicted Insurance Charges:')
-    st.write(f'${predicted_charges[0]:,.2f}')
+    st.write(f'₹{predicted_charges[0]:,.2f}')
 
-st.write('To run this app:')
 st.code('streamlit run app.py')
