@@ -33,4 +33,4 @@ if st.button('Predict'):
     st.subheader('Predicted Insurance Charges:')
     st.write(f'₹{predicted_charges[0]:,.2f}')
 
-st.code('streamlit run app.py')
+
