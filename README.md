@@ -1,11 +1,33 @@
-Insurance Charge Prediction
-This project is a simple web application built with Streamlit that predicts insurance charges based on age, BMI, and smoking status.
+# 🧮 Insurance Charge Prediction
 
-You can access the deployed application here: https://insurance-charge-predictor-lgbbrydrrvgjxhxsbgie2t.streamlit.app/
+A Streamlit web application that predicts medical insurance charges based on age, BMI, and smoking status using a trained machine learning model.
 
-Project Structure
-insurance.csv: The dataset used for training the model.
-model.pkl: The trained machine learning model saved as a pickle file.
-app.py: The Streamlit application code.
-requirements.txt: A file listing the Python dependencies.
-README.md: This README file.
+🔗 **Live Demo:** Click here to view the app:-https://insurance-charge-predictor-lgbbrydrrvgjxhxsbgie2t.streamlit.app/
+
+---
+
+## 📘 Project Overview
+This project aims to estimate the insurance cost for an individual using basic health and lifestyle parameters. The model is trained using regression techniques on the insurance.csv dataset.
+
+### Input Features
+- Age: Age of the insured person  
+- BMI: Body Mass Index  
+- Smoker: Smoking status (Yes/No)
+
+---
+
+## 🗂️ Project Structure
+Insurance-Charge-Prediction/  
+• insurance.csv – Dataset used for model training  
+• model.pkl – Trained ML model  
+• app.py – Streamlit web app code  
+• requirements.txt – Dependencies file  
+• README.md – Project documentation
+
+---
+
+## ⚙️ Installation and Usage
+1. Clone the Repository  
+   ```bash
+   git clone https://github.com/yourusername/insurance-charge-prediction.git
+   cd insurance-charge-prediction
